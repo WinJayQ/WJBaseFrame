@@ -40,7 +40,7 @@
     
     [self setViewControllers:@[chartNaviController,gamesNaviController,thirdNaviController,movieNaviController,userCenterNaviController]];
     
-    //[self addGuidancePicture];
+    [self addGuidancePicture];
 }
 
 - (void)initSetViewControllers

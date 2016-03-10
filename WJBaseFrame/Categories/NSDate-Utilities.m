@@ -19,6 +19,15 @@
 
 #pragma mark Relative Dates
 
+/* XCode-开发中消除警告语句
+ #pragma clang diagnostic push
+ #pragma clang diagnostic ignored "-Wdeprecated-declarations"
+ <#这里包含住出现警告的代码#>
+ #pragma clang diagnostic pop
+ */
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 + (NSDate *) dateWithDaysFromNow: (NSInteger) days
 {
     // Thanks, Jim Morrison
@@ -371,4 +380,5 @@
 	NSDateComponents *components = [CURRENT_CALENDAR components:DATE_COMPONENTS fromDate:self];
 	return components.year;
 }
+#pragma clang diagnostic pop
 @end

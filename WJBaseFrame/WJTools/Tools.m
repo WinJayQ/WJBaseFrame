@@ -10,6 +10,15 @@
 #import "Constants.h"
 #import "WJMacro.h"
 
+/* XCode-开发中消除警告语句
+ #pragma clang diagnostic push
+ #pragma clang diagnostic ignored "-Wdeprecated-declarations"
+ <#这里包含住出现警告的代码#>
+ #pragma clang diagnostic pop
+ */
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 @implementation Tools
 /**
  @method 获取指定宽度情况下，字符串value的高度
@@ -783,16 +792,6 @@
 }
 
 #pragma mark -是否打开相机权限
-//+ (BOOL)isCameraPermissions{
-//    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
-//    if (authStatus != AVAuthorizationStatusAuthorized)
-//    {
-//        return NO;
-//    }else{
-//        return YES;
-//    }
-//}
-
 + (BOOL) isCameraPermissions
 {
     AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
@@ -817,5 +816,5 @@
     UIGraphicsEndImageContext();
     return img;
 }
-
+#pragma clang diagnostic pop
 @end

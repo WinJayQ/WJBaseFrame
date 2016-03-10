@@ -30,6 +30,15 @@
 
 #import <objc/runtime.h>
 
+/* XCode-开发中消除警告语句
+ #pragma clang diagnostic push
+ #pragma clang diagnostic ignored "-Wdeprecated-declarations"
+ <#这里包含住出现警告的代码#>
+ #pragma clang diagnostic pop
+ */
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 static const void *UIAlertViewOriginalDelegateKey                   = &UIAlertViewOriginalDelegateKey;
 
 static const void *UIAlertViewTapBlockKey                           = &UIAlertViewTapBlockKey;
@@ -260,5 +269,5 @@ static const void *UIAlertViewShouldEnableFirstOtherButtonBlockKey  = &UIAlertVi
     
     return YES;
 }
-
+ #pragma clang diagnostic pop
 @end

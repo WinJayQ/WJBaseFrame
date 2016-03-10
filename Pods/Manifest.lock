@@ -21,7 +21,6 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - AIMTableViewIndexBar (0.1.1)
-  - CYLTabBarController (1.2.1)
   - FMDB (2.6):
     - FMDB/standard (= 2.6)
   - FMDB/standard (2.6)
@@ -39,7 +38,6 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
   - AIMTableViewIndexBar (~> 0.1.1)
-  - CYLTabBarController
   - FMDB (~> 2.5)
   - IQKeyboardManager (~> 3.2.4)
   - JSONKit (~> 1.5pre)
@@ -52,7 +50,6 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   AIMTableViewIndexBar: 184f27a47a6f0937baa0f91a1533bb052daf1ffb
-  CYLTabBarController: 62ee700d59dc1f42777053e6254933f499ab4564
   FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
   IQKeyboardManager: 555b1231fefafb21b19278d7cca72986a27b748b
   JSONKit: bae313ce6a6c444f40489a6c0b023f399888871f

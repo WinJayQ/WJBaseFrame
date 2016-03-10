@@ -27,6 +27,15 @@
 
 #import <UIKit/UIKit.h>
 
+/* XCode-开发中消除警告语句
+ #pragma clang diagnostic push
+ #pragma clang diagnostic ignored "-Wdeprecated-declarations"
+ <#这里包含住出现警告的代码#>
+ #pragma clang diagnostic pop
+ */
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 typedef void (^UIAlertViewBlock) (UIAlertView *alertView);
 typedef void (^UIAlertViewCompletionBlock) (UIAlertView *alertView, NSInteger buttonIndex);
 
@@ -54,5 +63,5 @@ typedef void (^UIAlertViewCompletionBlock) (UIAlertView *alertView, NSInteger bu
 @property (copy, nonatomic) UIAlertViewBlock cancelBlock;
 
 @property (copy, nonatomic) BOOL(^shouldEnableFirstOtherButtonBlock)(UIAlertView *alertView);
-
+#pragma clang diagnostic pop
 @end

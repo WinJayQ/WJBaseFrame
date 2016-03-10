@@ -20,18 +20,106 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gGL-D3-Kqb">
                                 <rect key="frame" x="110" y="79" width="100" height="100"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="电话：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u98-nJ-sRE">
+                                <rect key="frame" x="14" y="223" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="邮箱：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Dv-4A-40R">
+                                <rect key="frame" x="14" y="273" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="身份证：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZi-y0-Y69">
+                                <rect key="frame" x="14" y="323" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eZu-U0-oQP">
+                                <rect key="frame" x="67" y="219" width="165" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dEx-2N-OEV">
+                                <rect key="frame" x="67" y="269" width="165" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8QE-Fk-Mi5">
+                                <rect key="frame" x="81" y="319" width="219" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2X-SE-JTh">
+                                <rect key="frame" x="240" y="219" width="60" height="30"/>
+                                <state key="normal" title="验证号码"/>
+                                <connections>
+                                    <action selector="checkPhoneNum:" destination="Bse-DF-0uQ" eventType="touchUpInside" id="VAr-Wd-ueO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5q-ZO-ByT">
+                                <rect key="frame" x="240" y="268" width="60" height="30"/>
+                                <state key="normal" title="验证邮箱"/>
+                                <connections>
+                                    <action selector="checkEmail:" destination="Bse-DF-0uQ" eventType="touchUpInside" id="6Vr-Qy-sj9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgA-5v-8bW">
+                                <rect key="frame" x="110" y="431" width="100" height="30"/>
+                                <state key="normal" title="goto下一层" backgroundImage="common_btn_big_blue_nor.png">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="gotoNextPage:" destination="Bse-DF-0uQ" eventType="touchUpInside" id="4rg-22-mwa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmi-9m-CGi">
+                                <rect key="frame" x="195" y="357" width="105" height="30"/>
+                                <state key="normal" title="验证身份证号码"/>
+                                <connections>
+                                    <action selector="checkPersonCode:" destination="Bse-DF-0uQ" eventType="touchUpInside" id="8o1-NE-pah"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="DDn-Ur-QOB"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="emailTF" destination="dEx-2N-OEV" id="F4o-yF-afS"/>
                         <outlet property="myImageView" destination="gGL-D3-Kqb" id="oVN-Z4-V46"/>
+                        <outlet property="nextPageBtn" destination="QgA-5v-8bW" id="dPJ-rK-pCB"/>
+                        <outlet property="personCodeTF" destination="8QE-Fk-Mi5" id="UfK-1x-IFA"/>
+                        <outlet property="phoneTF" destination="eZu-U0-oQP" id="1K0-jV-6AE"/>
+                        <segue destination="gfM-0n-0i7" kind="push" id="fVL-Y8-uj0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p5b-ZV-uRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-755" y="1421"/>
+            <point key="canvasLocation" x="-897" y="1421"/>
+        </scene>
+        <!--Next Page View Controller-->
+        <scene sceneID="iqu-ON-SK1">
+            <objects>
+                <viewController storyboardIdentifier="nextVC" id="gfM-0n-0i7" customClass="NextPageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rRb-T6-9si"/>
+                        <viewControllerLayoutGuide type="bottom" id="GGS-ks-Ytf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JJF-1F-lIZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="m3a-TE-Phf"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wcN-YV-vbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-387" y="1421"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JTd-hl-qph">
@@ -54,4 +142,7 @@
             <point key="canvasLocation" x="-1273" y="1421"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="common_btn_big_blue_nor.png" width="280" height="40"/>
+    </resources>
 </document>

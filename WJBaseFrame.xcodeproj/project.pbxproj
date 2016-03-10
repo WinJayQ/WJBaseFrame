@@ -125,6 +125,8 @@
 		9C6118B11C8D78C800EE645F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6118B01C8D78C800EE645F /* UIKit.framework */; };
 		9C6118B31C8D78D300EE645F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6118B21C8D78D300EE645F /* CoreGraphics.framework */; };
 		9C6118B51C8D78DC00EE645F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6118B41C8D78DC00EE645F /* QuartzCore.framework */; };
+		9C7286161C915EE300857347 /* PQActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7286151C915EE300857347 /* PQActionSheet.m */; };
+		9C72861B1C91768B00857347 /* NextPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C72861A1C91768B00857347 /* NextPageViewController.m */; };
 		9C97F5151C87E1B400164783 /* UIImage+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C97F5101C87E1B400164783 /* UIImage+RoundCorner.m */; };
 		9C97F5161C87E1B400164783 /* UIImageView+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C97F5121C87E1B400164783 /* UIImageView+RoundCorner.m */; };
 		9C97F5171C87E1B400164783 /* UIView+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C97F5141C87E1B400164783 /* UIView+RoundCorner.m */; };
@@ -385,6 +387,10 @@
 		9C6118B01C8D78C800EE645F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9C6118B21C8D78D300EE645F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9C6118B41C8D78DC00EE645F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9C7286141C915EE300857347 /* PQActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQActionSheet.h; sourceTree = "<group>"; };
+		9C7286151C915EE300857347 /* PQActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQActionSheet.m; sourceTree = "<group>"; };
+		9C7286191C91768B00857347 /* NextPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextPageViewController.h; sourceTree = "<group>"; };
+		9C72861A1C91768B00857347 /* NextPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextPageViewController.m; sourceTree = "<group>"; };
 		9C97F50F1C87E1B400164783 /* UIImage+RoundCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundCorner.h"; sourceTree = "<group>"; };
 		9C97F5101C87E1B400164783 /* UIImage+RoundCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundCorner.m"; sourceTree = "<group>"; };
 		9C97F5111C87E1B400164783 /* UIImageView+RoundCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RoundCorner.h"; sourceTree = "<group>"; };
@@ -911,6 +917,7 @@
 		9C29337A1C608E8700D9500E /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				9C7286131C915EE300857347 /* PQActionSheet */,
 				9C26D5501C9012D800408644 /* XXNibBridge */,
 				9C26D5451C900DDB00408644 /* PlayerView */,
 				9C61188A1C8D66EE00EE645F /* Masonry */,
@@ -960,8 +967,7 @@
 				9CD9350A1C89258F00557EFB /* ThirdViewController.h */,
 				9CD9350B1C89258F00557EFB /* ThirdViewController.m */,
 				9C26D5411C900AD400408644 /* MovieVC */,
-				9CD9351F1C893B0300557EFB /* UserCenterViewController.h */,
-				9CD935201C893B0300557EFB /* UserCenterViewController.m */,
+				9C7286181C91698A00857347 /* UserCenter */,
 			);
 			name = Controller;
 			path = ViewController;
@@ -1125,6 +1131,26 @@
 				9C6118A31C8D66EE00EE645F /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		9C7286131C915EE300857347 /* PQActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				9C7286141C915EE300857347 /* PQActionSheet.h */,
+				9C7286151C915EE300857347 /* PQActionSheet.m */,
+			);
+			path = PQActionSheet;
+			sourceTree = "<group>";
+		};
+		9C7286181C91698A00857347 /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				9CD9351F1C893B0300557EFB /* UserCenterViewController.h */,
+				9CD935201C893B0300557EFB /* UserCenterViewController.m */,
+				9C7286191C91768B00857347 /* NextPageViewController.h */,
+				9C72861A1C91768B00857347 /* NextPageViewController.m */,
+			);
+			name = UserCenter;
 			sourceTree = "<group>";
 		};
 		9C97F52D1C87EB2200164783 /* GTMBase64 */ = {
@@ -1650,6 +1676,7 @@
 				9C97F5A71C87ECD900164783 /* UIView+ImageSnapshot.m in Sources */,
 				9C97F52C1C87EAE100164783 /* NSString+MD5.m in Sources */,
 				9C97F5D21C87ED6A00164783 /* SDWebImagePrefetcher.m in Sources */,
+				9C72861B1C91768B00857347 /* NextPageViewController.m in Sources */,
 				9C26D5441C900B2200408644 /* LocalVideoViewController.m in Sources */,
 				9C6118AC1C8D66EE00EE645F /* View+MASAdditions.m in Sources */,
 				9C61187C1C8D635200EE645F /* UIView+ FrameChange.m in Sources */,
@@ -1667,6 +1694,7 @@
 				9CD935251C8977FA00557EFB /* HWPopTool.m in Sources */,
 				9C97F5DC1C87EE9700164783 /* UIImage+UIImageExtras.m in Sources */,
 				9CD935211C893B0300557EFB /* UserCenterViewController.m in Sources */,
+				9C7286161C915EE300857347 /* PQActionSheet.m in Sources */,
 				9C6118A81C8D66EE00EE645F /* MASViewAttribute.m in Sources */,
 				9C97F5CE1C87ED6A00164783 /* SDWebImageDecoder.m in Sources */,
 				9C97F5D51C87ED6A00164783 /* UIImage+MultiFormat.m in Sources */,
@@ -1884,6 +1912,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ginha.WJBaseFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = (
+					"-Wdeprecated-declarations",
+					"-Wno-shorten-64-to-32",
+					"-Wdeprecated-declarations",
+				);
 			};
 			name = Debug;
 		};
@@ -1899,6 +1932,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ginha.WJBaseFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = (
+					"-Wdeprecated-declarations",
+					"-Wno-shorten-64-to-32",
+					"-Wdeprecated-declarations",
+				);
 			};
 			name = Release;
 		};
