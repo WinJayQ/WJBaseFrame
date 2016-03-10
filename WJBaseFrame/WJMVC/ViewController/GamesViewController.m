@@ -7,6 +7,7 @@
 //
 
 #import "GamesViewController.h"
+#import "WebGamesViewController.h"
 
 @interface GamesViewController ()
 
@@ -17,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.leftItemHidden = YES;
+    self.title = @"Game";
+    self.view.backgroundColor = [[UIColor alloc]initWithPatternImage:[UIImage imageNamed:@"zj.jpg"]];
+    
+    [self.playBtn setCorner:15];
+    self.playBtn.backgroundColor = [UIColor greenColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +40,9 @@
 }
 */
 
+- (IBAction)PlayGames:(id)sender {
+    WebGamesViewController *webGameVC = [self.storyboard instantiateViewControllerWithIdentifier:@"WebGameVC"];
+    webGameVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:webGameVC animated:YES];
+}
 @end

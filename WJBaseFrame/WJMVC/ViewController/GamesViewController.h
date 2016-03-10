@@ -10,5 +10,7 @@
 #import "WJBaseViewController.h"
 
 @interface GamesViewController : WJBaseViewController
+- (IBAction)PlayGames:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *playBtn;
 
 @end

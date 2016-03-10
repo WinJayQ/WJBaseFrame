@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.leftItemHidden = YES;
+     self.title = @"UserCenter";
     [self.navigationItem setHidesBackButton:YES]; //隐藏导航栏返回按钮
     [self.myImageView sd_setImageWithURL:[NSURL URLWithString:@"http://img4.duitang.com/uploads/item/201506/07/20150607125257_T2RvC.png"]
                         placeholderImage:[UIImage imageNamed:@"10.png"]

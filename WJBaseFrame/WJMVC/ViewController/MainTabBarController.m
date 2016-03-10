@@ -10,7 +10,7 @@
 #import "ChartViewController.h"
 #import "GamesViewController.h"
 #import "ThirdViewController.h"
-#import "FourthViewController.h"
+#import "MovieViewController.h"
 #import "UserCenterViewController.h"
 #import "UINavigationBar+Utilities.h"
 #import "EAIntroPage.h"
@@ -22,7 +22,7 @@
     UINavigationController *chartNaviController;
     UINavigationController *gamesNaviController;
     UINavigationController *thirdNaviController;
-    UINavigationController *fourthNaviController;
+    UINavigationController *movieNaviController;
     UINavigationController *userCenterNaviController;
 }
 @property (nonatomic, strong)EAIntroView *intro;
@@ -38,7 +38,7 @@
     
     [self initSetViewControllers];
     
-    [self setViewControllers:@[chartNaviController,gamesNaviController,thirdNaviController,fourthNaviController,userCenterNaviController]];
+    [self setViewControllers:@[chartNaviController,gamesNaviController,thirdNaviController,movieNaviController,userCenterNaviController]];
     
     //[self addGuidancePicture];
 }
@@ -50,50 +50,50 @@
     UIStoryboard *chartStoryboard = [UIStoryboard storyboardWithName:@"Chart" bundle:bundle];
     chartNaviController = [chartStoryboard instantiateInitialViewController];
     chartNaviController.tabBarItem.title = @"Chart";
-    UIImage *normalImage = [UIImage imageNamed:@"swtich_off.png"];
+    UIImage *normalImage = [UIImage imageNamed:@"my_nor.png"];
     normalImage = [normalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     chartNaviController.tabBarItem.image = normalImage;
-    UIImage *selectedImage = [UIImage imageNamed:@"swtich_on.png"];
+    UIImage *selectedImage = [UIImage imageNamed:@"my_sel.png"];
     selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     chartNaviController.tabBarItem.selectedImage = selectedImage;
     
     UIStoryboard *gamesStoryboard = [UIStoryboard storyboardWithName:@"Games" bundle:bundle];
     gamesNaviController = [gamesStoryboard instantiateInitialViewController];
     gamesNaviController.tabBarItem.title = @"Game";
-    UIImage *normalImage2 = [UIImage imageNamed:@"swtich_off.png"];
+    UIImage *normalImage2 = [UIImage imageNamed:@"my_nor.png"];
     normalImage2 = [normalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     gamesNaviController.tabBarItem.image = normalImage2;
-    UIImage *selectedImage2 = [UIImage imageNamed:@"swtich_on.png"];
+    UIImage *selectedImage2 = [UIImage imageNamed:@"my_sel.png"];
     selectedImage2 = [selectedImage2 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     gamesNaviController.tabBarItem.selectedImage = selectedImage2;
     
     UIStoryboard *thirdStoryboard = [UIStoryboard storyboardWithName:@"Third" bundle:bundle];
     thirdNaviController = [thirdStoryboard instantiateInitialViewController];
     thirdNaviController.tabBarItem.title = @"Third";
-    UIImage *normalImage3 = [UIImage imageNamed:@"swtich_off.png"];
+    UIImage *normalImage3 = [UIImage imageNamed:@"my_nor.png"];
     normalImage3 = [normalImage3 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     thirdNaviController.tabBarItem.image = normalImage3;
-    UIImage *selectedImage3 = [UIImage imageNamed:@"swtich_on.png"];
+    UIImage *selectedImage3 = [UIImage imageNamed:@"my_sel.png"];
     selectedImage3 = [selectedImage3 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     thirdNaviController.tabBarItem.selectedImage = selectedImage3;
     
-    UIStoryboard *fourthStoryboard = [UIStoryboard storyboardWithName:@"Fourth" bundle:bundle];
-    fourthNaviController = [fourthStoryboard instantiateInitialViewController];
-    fourthNaviController.tabBarItem.title = @"Fourth";
-    UIImage *normalImage4 = [UIImage imageNamed:@"swtich_off.png"];
+    UIStoryboard *fourthStoryboard = [UIStoryboard storyboardWithName:@"movie" bundle:bundle];
+    movieNaviController = [fourthStoryboard instantiateInitialViewController];
+    movieNaviController.tabBarItem.title = @"movie";
+    UIImage *normalImage4 = [UIImage imageNamed:@"my_nor.png"];
     normalImage4 = [normalImage4 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    fourthNaviController.tabBarItem.image = normalImage4;
-    UIImage *selectedImage4 = [UIImage imageNamed:@"swtich_on.png"];
+    movieNaviController.tabBarItem.image = normalImage4;
+    UIImage *selectedImage4 = [UIImage imageNamed:@"my_sel.png"];
     selectedImage4 = [selectedImage4 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    fourthNaviController.tabBarItem.selectedImage = selectedImage4;
+    movieNaviController.tabBarItem.selectedImage = selectedImage4;
     
     UIStoryboard *userCenterStoryboard = [UIStoryboard storyboardWithName:@"UserCenter" bundle:bundle];
     userCenterNaviController = [userCenterStoryboard instantiateInitialViewController];
     userCenterNaviController.tabBarItem.title = @"UserCenter";
-    UIImage *normalImage5 = [UIImage imageNamed:@"swtich_off.png"];
+    UIImage *normalImage5 = [UIImage imageNamed:@"my_nor.png"];
     normalImage5 = [normalImage5 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     userCenterNaviController.tabBarItem.image = normalImage5;
-    UIImage *selectedImage5 = [UIImage imageNamed:@"swtich_on.png"];
+    UIImage *selectedImage5 = [UIImage imageNamed:@"my_sel.png"];
     selectedImage5 = [selectedImage5 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     userCenterNaviController.tabBarItem.selectedImage = selectedImage5;
     
@@ -105,8 +105,8 @@
     
     
     //设置fourth导航栏
-    [fourthNaviController.navigationBar setBackgroundImage:[UIImage imageNamed:@"nav88"] forBarMetrics:UIBarMetricsDefault];
-    [fourthNaviController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
+    [movieNaviController.navigationBar setBackgroundImage:[UIImage imageNamed:@"nav128"] forBarMetrics:UIBarMetricsDefault];
+    [movieNaviController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
     
     
     //设置其他导航栏

@@ -13,6 +13,7 @@
 @interface ThirdViewController ()
 @property (strong, nonatomic) UIView *contentView;
 @property (strong, nonatomic) UIButton *popBtn;
+@property (strong, nonatomic) UILabel *label;
 
 @end
 
@@ -21,12 +22,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.leftItemHidden = YES;
+     self.title = @"Third";
+    self.view.backgroundColor = [[UIColor alloc]initWithPatternImage:[UIImage imageNamed:@"xiq.jpg"]];
     
     _contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 300)];
     _contentView.backgroundColor = [UIColor orangeColor];
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(100, 200, 200, 50);
+    btn.frame = CGRectMake(100, 100, 200, 50);
     btn.center = self.view.center;
     btn.backgroundColor = [UIColor redColor];
     [btn setTitle:@"恭喜发财，大吉大利！" forState:UIControlStateNormal];
@@ -47,6 +50,7 @@
 }
 
 - (void)popViewShow {
+    self.label.hidden = YES;
     UIImageView *imageV = [[UIImageView alloc]initWithFrame:_contentView.bounds];
     imageV.image = [UIImage imageNamed:@"red_packge.png"];
     [_contentView addSubview:imageV];
@@ -61,7 +65,10 @@
 - (void)closeAndBack {
     [[HWPopTool sharedInstance] closeWithBlcok:^{
        // [self.navigationController popViewControllerAnimated:YES];
-        [self.tabBarController setSelectedIndex:4];
+        self.label = [[UILabel alloc]initWithFrame:CGRectMake(80,330, 200, 50)];
+        self.label.textColor = [UIColor blueColor];
+        self.label.text = @"一分也是爱,谢谢老板!!";
+        [self.view addSubview:self.label];
     }];
 }
 
