@@ -67,7 +67,7 @@
        // [self.navigationController popViewControllerAnimated:YES];
         self.label = [[UILabel alloc]initWithFrame:CGRectMake(80,330, 200, 50)];
         self.label.textColor = [UIColor blueColor];
-        self.label.text = @"一分也是爱,谢谢老板!!";
+        self.label.text = @"一分也是爱,谢谢老板!";
         [self.view addSubview:self.label];
     }];
 }
