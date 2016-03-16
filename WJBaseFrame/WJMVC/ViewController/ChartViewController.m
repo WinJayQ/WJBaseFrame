@@ -206,7 +206,6 @@
     }
     
     self.barChart = [[PNBarChart alloc] initWithFrame:CGRectMake(0, 85.0, SCREEN_WIDTH, 200.0)];
-    //self.barChart.showLabel = NO;
     self.barChart.backgroundColor = [UIColor clearColor];
     self.barChart.yLabelFormatter = ^(CGFloat yValue){
         return [barChartFormatter stringFromNumber:[NSNumber numberWithFloat:yValue]];
