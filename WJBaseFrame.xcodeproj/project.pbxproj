@@ -127,6 +127,7 @@
 		9C6118B51C8D78DC00EE645F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6118B41C8D78DC00EE645F /* QuartzCore.framework */; };
 		9C7286161C915EE300857347 /* PQActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7286151C915EE300857347 /* PQActionSheet.m */; };
 		9C72861B1C91768B00857347 /* NextPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C72861A1C91768B00857347 /* NextPageViewController.m */; };
+		9C8534C91C98F8BA004B199D /* WJDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8534C81C98F8BA004B199D /* WJDropdownMenu.m */; };
 		9C97F5151C87E1B400164783 /* UIImage+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C97F5101C87E1B400164783 /* UIImage+RoundCorner.m */; };
 		9C97F5161C87E1B400164783 /* UIImageView+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C97F5121C87E1B400164783 /* UIImageView+RoundCorner.m */; };
 		9C97F5171C87E1B400164783 /* UIView+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C97F5141C87E1B400164783 /* UIView+RoundCorner.m */; };
@@ -391,6 +392,8 @@
 		9C7286151C915EE300857347 /* PQActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQActionSheet.m; sourceTree = "<group>"; };
 		9C7286191C91768B00857347 /* NextPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextPageViewController.h; sourceTree = "<group>"; };
 		9C72861A1C91768B00857347 /* NextPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextPageViewController.m; sourceTree = "<group>"; };
+		9C8534C71C98F8BA004B199D /* WJDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJDropdownMenu.h; sourceTree = "<group>"; };
+		9C8534C81C98F8BA004B199D /* WJDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJDropdownMenu.m; sourceTree = "<group>"; };
 		9C97F50F1C87E1B400164783 /* UIImage+RoundCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundCorner.h"; sourceTree = "<group>"; };
 		9C97F5101C87E1B400164783 /* UIImage+RoundCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundCorner.m"; sourceTree = "<group>"; };
 		9C97F5111C87E1B400164783 /* UIImageView+RoundCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RoundCorner.h"; sourceTree = "<group>"; };
@@ -917,6 +920,7 @@
 		9C29337A1C608E8700D9500E /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				9C8534C61C98F8BA004B199D /* WJDropDownMenu */,
 				9C7286131C915EE300857347 /* PQActionSheet */,
 				9C26D5501C9012D800408644 /* XXNibBridge */,
 				9C26D5451C900DDB00408644 /* PlayerView */,
@@ -958,14 +962,12 @@
 		9C2933A01C608E8700D9500E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9CD935221C8977FA00557EFB /* HWPoTools */,
 				9C2933B21C608EB700D9500E /* WJBaseVC */,
 				9CD935011C89244C00557EFB /* MainTabBarController.h */,
 				9CD935021C89244C00557EFB /* MainTabBarController.m */,
 				9C6118891C8D66AA00EE645F /* ChartVC */,
 				9C26D5331C8FD04900408644 /* GamesVC */,
-				9CD9350A1C89258F00557EFB /* ThirdViewController.h */,
-				9CD9350B1C89258F00557EFB /* ThirdViewController.m */,
+				9C8534CA1C98FEAA004B199D /* ThirdVC */,
 				9C26D5411C900AD400408644 /* MovieVC */,
 				9C7286181C91698A00857347 /* UserCenter */,
 			);
@@ -1151,6 +1153,25 @@
 				9C72861A1C91768B00857347 /* NextPageViewController.m */,
 			);
 			name = UserCenter;
+			sourceTree = "<group>";
+		};
+		9C8534C61C98F8BA004B199D /* WJDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				9C8534C71C98F8BA004B199D /* WJDropdownMenu.h */,
+				9C8534C81C98F8BA004B199D /* WJDropdownMenu.m */,
+			);
+			path = WJDropDownMenu;
+			sourceTree = "<group>";
+		};
+		9C8534CA1C98FEAA004B199D /* ThirdVC */ = {
+			isa = PBXGroup;
+			children = (
+				9CD935221C8977FA00557EFB /* HWPoTools */,
+				9CD9350A1C89258F00557EFB /* ThirdViewController.h */,
+				9CD9350B1C89258F00557EFB /* ThirdViewController.m */,
+			);
+			name = ThirdVC;
 			sourceTree = "<group>";
 		};
 		9C97F52D1C87EB2200164783 /* GTMBase64 */ = {
@@ -1747,6 +1768,7 @@
 				9C6118AA1C8D66EE00EE645F /* NSArray+MASAdditions.m in Sources */,
 				9C97F60D1C8812A500164783 /* StatusKit.m in Sources */,
 				9C97F5CB1C87ED6A00164783 /* NSData+ImageContentType.m in Sources */,
+				9C8534C91C98F8BA004B199D /* WJDropdownMenu.m in Sources */,
 				9C26D5361C8FD07500408644 /* WebGamesViewController.m in Sources */,
 				9C29344C1C60D5AB00D9500E /* WJBaseTableViewController.m in Sources */,
 				9C2933BE1C608F0D00D9500E /* NSObject+Utilities.m in Sources */,
