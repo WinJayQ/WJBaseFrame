@@ -30,6 +30,8 @@
 
 @end
 
+int (^myBlock)(int,int);
+
 @implementation UserCenterViewController
 
 - (void)viewDidLoad {
@@ -49,7 +51,18 @@
     [self.myImageView circleCorner];
     self.myImageView.userInteractionEnabled = YES;
     [self.nextPageBtn setCorner:5];
+    
+    myBlock= ^(int a, int b){
+        return a+b;
+    };
+
+    int result = myBlock(2,3);
+    NSLog(@"%d",result);
+    
+   
 }
+
+
 
 #pragma mark - 更换头像
 - (void)changeHeadImage {

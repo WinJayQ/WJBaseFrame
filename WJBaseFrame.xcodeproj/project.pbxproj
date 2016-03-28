@@ -178,6 +178,7 @@
 		9C97F6131C88662E00164783 /* Games.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C97F6121C88662E00164783 /* Games.storyboard */; };
 		9C97F6151C88664100164783 /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C97F6141C88664100164783 /* Third.storyboard */; };
 		9C97F6171C88666700164783 /* movie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C97F6161C88666700164783 /* movie.storyboard */; };
+		9CD053BE1C9BD3E700B5B400 /* UIView+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD053BD1C9BD3E700B5B400 /* UIView+Masonry.m */; };
 		9CD935031C89244C00557EFB /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD935021C89244C00557EFB /* MainTabBarController.m */; };
 		9CD935061C89256500557EFB /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD935051C89256500557EFB /* ChartViewController.m */; };
 		9CD935091C89257C00557EFB /* GamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD935081C89257C00557EFB /* GamesViewController.m */; };
@@ -583,6 +584,8 @@
 		9C97F6121C88662E00164783 /* Games.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Games.storyboard; sourceTree = "<group>"; };
 		9C97F6141C88664100164783 /* Third.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Third.storyboard; sourceTree = "<group>"; };
 		9C97F6161C88666700164783 /* movie.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = movie.storyboard; sourceTree = "<group>"; };
+		9CD053BC1C9BD3E700B5B400 /* UIView+Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Masonry.h"; sourceTree = "<group>"; };
+		9CD053BD1C9BD3E700B5B400 /* UIView+Masonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Masonry.m"; sourceTree = "<group>"; };
 		9CD935011C89244C00557EFB /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 		9CD935021C89244C00557EFB /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		9CD935041C89256500557EFB /* ChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartViewController.h; sourceTree = "<group>"; };
@@ -854,6 +857,8 @@
 				9C97F5291C87EAE100164783 /* NSString+MD5.m */,
 				9CD935131C892C6400557EFB /* UINavigationBar+Utilities.h */,
 				9CD935141C892C6400557EFB /* UINavigationBar+Utilities.m */,
+				9CD053BC1C9BD3E700B5B400 /* UIView+Masonry.h */,
+				9CD053BD1C9BD3E700B5B400 /* UIView+Masonry.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1767,6 +1772,7 @@
 				9C2933C01C608F0D00D9500E /* UIAlertView+Blocks.m in Sources */,
 				9C6118AA1C8D66EE00EE645F /* NSArray+MASAdditions.m in Sources */,
 				9C97F60D1C8812A500164783 /* StatusKit.m in Sources */,
+				9CD053BE1C9BD3E700B5B400 /* UIView+Masonry.m in Sources */,
 				9C97F5CB1C87ED6A00164783 /* NSData+ImageContentType.m in Sources */,
 				9C8534C91C98F8BA004B199D /* WJDropdownMenu.m in Sources */,
 				9C26D5361C8FD07500408644 /* WebGamesViewController.m in Sources */,
